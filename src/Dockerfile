@@ -1,5 +1,6 @@
 FROM owasp/modsecurity-crs:nginx-alpine
 
+RUN apk update --no-cache && apk upgrade --no-cache
 RUN apk add -U --no-cache git php8-fpm py3-pip supervisor &&\
   pip install 'git+https://github.com/coderanger/supervisor-stdout.git'
 
