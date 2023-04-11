@@ -27,7 +27,7 @@ services:
       - proxy
     environment:
       #### COMMON ENV VARS
-      - CRS_RULES_SYNC=true
+      - CRS_RULES_SYNC=false
       - CRS_RULES_REPO=MrKoopaKiller/modsec-for-bts
       - CRS_RULES_BRANCH=develop
       - BACKEND_PORT443=http://web:8080
